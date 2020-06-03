@@ -5,9 +5,6 @@ import Weatherstack from './components/Weatherstack';
 
 const App = () => {
 
- 
- 
-
   return (
   <div class="container">
   <Turnos/>

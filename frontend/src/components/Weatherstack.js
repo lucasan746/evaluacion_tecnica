@@ -23,7 +23,6 @@ class Weatherstack extends Component  {
           img: res.data.current.weather_icons,
           loading: false
         })
-    console.log(this.state)
   }
 
 render() {
@@ -32,11 +31,9 @@ render() {
     return (
     <div>
     <footer className="page-footer font-small blue">
-
     <div className="footer-copyright text-center py-3"> 
     <a href="https://mdbootstrap.com/">Cargando...</a>
      </div>
-
     </footer>
     </div>) 
   }
@@ -57,17 +54,10 @@ render() {
         <h5  class="mb-1">{this.state.temp}°C</h5>
       </li>
     </ul>
-  
-
   </div>
- 
-
- 
   <div class="footer-copyright text-center py-3">
     <img src={this.state.img} />
   </div>
- 
-
 </footer>
   )
 
