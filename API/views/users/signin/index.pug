@@ -1,0 +1,16 @@
+extends ../../layout/index
+block contenido
+	include ../../partials/errores
+	main.container
+		.row
+			.col-md-4.mx-auto
+				.card
+					.card-header
+						h3 Iniciar Sesión
+					.card-body
+						form(action="/signin", method="POST")
+							.form-group
+								input.form-control(type="text",name="username",placeholder="Username")
+							.form-group
+								input.form-control(type="password",name="password",placeholder="Password")
+							button.btn.btn-primary.btn-block Signin

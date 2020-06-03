@@ -1,0 +1,11 @@
+if(error.length != 0)
+	.alert.alert-danger.alert-dismissible.fade.show.mx-5(role='alert')
+			div.text-center=error
+			button.close(type='button' data-dismiss='alert' aria-label='Close')
+				span(aria-hidden='true') &times;
+if(errors)
+	each error in errors
+		.alert.alert-danger.alert-dismissible.fade.show.mx-5(role='alert')
+			div.text-center=error.text
+			button.close(type='button' data-dismiss='alert' aria-label='Close')
+				span(aria-hidden='true') &times;
