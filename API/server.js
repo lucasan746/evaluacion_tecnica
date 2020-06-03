@@ -55,19 +55,15 @@ const server = app.listen(4000, ()=>{
 const io = SocketIO(server);
 
 io.on('connection', (socket)=> {
-  console.log('nueva conexion');
   socket.on("message", (message) => {
     socket.broadcast.emit("response", (message))
-    console.log(message);
   });
 });
 
 io.on('connection', (socket2)=> {
-  console.log('nueva conexion');
   socket2.on("newRequest", (message) => {
   funcTurnos.getTurnos().then(function(result){
     socket2.emit("response", (result))
-    console.log(result);
   });
   });
 });
