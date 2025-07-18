@@ -75,6 +75,15 @@ const Turnos = () => {
   <div class="card-header">
   </div>
   <div class="card-body">
+    <h5 class="card-title">{listaTurnos[0][0] ? listaTurnos[0][0].length : 0}</h5>
+    <p class="card-text">Turnos totales</p>
+  </div>
+  <div class="card-footer text-muted">
+  </div>
+<div class="card text-center my-3">
+  <div class="card-header">
+  </div>
+  <div class="card-body">
     <h5 class="card-title">{sinAtender}</h5>
     <p class="card-text">Turnos sin atender</p>
   </div>
