@@ -13,7 +13,7 @@ const Turnos = () => {
     socketRef.current.on(
       "response",
       ( result ) => {
-        setTurnos(results => [result]);
+        setTurnos(results => [result4]);
       }
     );
 
